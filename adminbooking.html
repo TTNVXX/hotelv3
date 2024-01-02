@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Bookings</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="stylesadmin.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+<!-- header section ends -->
+
+<!-- bookings section starts  -->
+
+<section class="grid">
+
+   <h1 class="heading">bookings</h1>
+
+   <div class="box-container">
+
+   <!-- Placeholder content for static version -->
+   <div class="box">
+      <p>booking id : <span>12345</span></p>
+      <p>name : <span>John Doe</span></p>
+      <p>email : <span>johndoe@example.com</span></p>
+      <p>number : <span>1234567890</span></p>
+      <p>check in : <span>2023-11-13</span></p>
+      <p>check out : <span>2023-11-15</span></p>
+      <p>rooms : <span>2</span></p>
+      <p>adults : <span>2</span></p>
+      <p>childs : <span>1</span></p>
+      <form action="" method="POST">
+         <input type="hidden" name="delete_id" value="12345">
+         <input type="submit" value="delete booking" onclick="return confirm('delete this booking?');" name="delete" class="btn">
+      </form>
+   </div>
+
+   <!-- Placeholder content for static version -->
+   <div class="box" style="text-align: center;">
+      <p>no bookings found!</p>
+      <a href="dashboard.html" class="btn">go to home</a>
+   </div>
+
+   </div>
+
+</section>
+
+<!-- bookings section ends -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="adminscript.js"></script>
+
+
+</body>
+</html>

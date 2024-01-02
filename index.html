@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+   <!-- font link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+   
+<!-- header section starts  -->
+
+<section class="header">
+
+   <div class="flex">
+      <a href="#home" class="logo">Hotels And Resorts</a>
+      <img class="logo" src="images/LOGO.png" alt="">
+      <a href="#availability" class="btn">check availability</a>
+      <div id="menu-btn" class="fas fa-bars"></div>
+   </div>
+
+   <nav class="navbar">
+      <a href="#home">home</a>
+      <!-- <a href="#about">about</a> -->
+      <a href="#reservation">reservation</a>
+      <!-- <a href="#gallery">gallery</a>
+      <a href="#contact">contact</a>
+      <a href="#reviews">reviews</a> -->
+      <!-- <a href="#menu">Food</a> -->
+      <a href="#room">Room</a>
+      <a href="bookings.html">My Booking</a>
+      <a href="log.html">Login</a>
+      <a href="admin.html">admin</a>
+   </nav>
+
+</section>
+
+<!-- header section ends -->
+
+<!-- availability section starts  -->
+
+<!-- <section class="availability" id="availability">
+
+   <form action="" method="post">
+      <div class="flex">
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <input type="submit" value="check availability" name="check" class="btn">
+   </form>
+
+</section> -->
+
+<!-- availability section ends -->
+
+<!-- room section start -->
+<section class="room_container" id="room">
+   <p class="section_subheader">ROOMS</p>
+   <h2 class="section_header">Deluxe Rooms</h2>
+   <div class="room_grid">
+     <div class="room_card">
+       <img src="images/room-1.jpg" alt="room" />
+       <div class="room_card_details">
+         <div>
+           <h4>Deluxe Suite</h4>
+           <p>Well-appointed rooms designed for guests who desire a more.</p>
+         </div>
+         <h3>$399<span>/night</span></h3>
+       </div>
+     </div>
+     <div class="room_card">
+       <img src="images/room-2.jpg" alt="room" />
+       <div class="room_card_details">
+         <div>
+           <h4>Family Suite</h4>
+           <p>Consist of multiple rooms and a common living area.</p>
+         </div>
+         <h3>$599<span>/night</span></h3>
+       </div>
+     </div>
+     <div class="room_card">
+       <img src="images/room-3.jpg" alt="room" />
+       <div class="room_card_details">
+         <div>
+           <h4>Luxury Penthouse</h4>
+           <p>
+             Top-tier accommodations usually on the highest floors of a
+             hotel.
+           </p>
+         </div>
+         <h3>$799<span>/night</span></h3>
+       </div>
+     </div>
+   </div>
+   <!-- <a href="/room/room.html" class="btn">See More Room</a> -->
+ </section>
+<!-- room section ends -->
+
+<!-- Food section ends -->
+<section class="gallery" id="gallery">
+   <div class="section_container">
+     <div class="gallery_header">
+       <div>
+         <p class="section_subheader">MENU</p>
+         <h2 class="section_header">Our Gallery</h2>
+       </div>
+       <div class="section_nav">
+         <span><i class="ri-arrow-left-line"></i></span>
+         <span><i class="ri-arrow-right-line"></i></span>
+       </div>
+     </div>
+     <ul class="gallery_items">
+       <li>
+         <img src="images/kolase.jpg" alt="kolase" />
+         </div>
+       </li>
+     </ul>
+     <!-- <a href="/food/food.html" class="btn">Order Food</a> -->
+</section>
+<!-- food section ends -->
+
+<!-- reservation section starts  -->
+
+<section class="reservation" id="reservation">
+
+   <form action="" method="post">
+      <h3>make a reservation</h3>
+      <div class="flex">
+         <div class="box">
+            <p>Name <span>*</span></p>
+            <input type="text" name="name" maxlength="50" required placeholder="enter your name" class="input">
+         </div>
+         <div class="box">
+            <p>email <span>*</span></p>
+            <input type="email" name="email" maxlength="50" required placeholder="enter your email" class="input">
+         </div>
+         <div class="box">
+            <p>Phone Number <span>*</span></p>
+            <input type="number" name="number" maxlength="10" min="0" max="9999999999" required placeholder="enter your number" class="input">
+         </div>
+         <div class="box">
+            <p>check in <span>*</span></p>
+            <input type="date" name="check_in" class="input" required>
+         </div>
+         <div class="box">
+            <p>check out <span>*</span></p>
+            <input type="date" name="check_out" class="input" required>
+         </div>
+         <div class="box">
+            <p>adults <span>*</span></p>
+            <select name="adults" class="input" required>
+               <option value="1">1 adult</option>
+               <option value="2">2 adults</option>
+               <option value="3">3 adults</option>
+               <option value="4">4 adults</option>
+               <option value="5">5 adults</option>
+               <option value="6">6 adults</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>childs <span>*</span></p>
+            <select name="childs" class="input" required>
+               <option value="-">0 child</option>
+               <option value="1">1 child</option>
+               <option value="2">2 childs</option>
+               <option value="3">3 childs</option>
+               <option value="4">4 childs</option>
+               <option value="5">5 childs</option>
+               <option value="6">6 childs</option>
+            </select>
+         </div>
+         <div class="box">
+            <p>rooms <span>*</span></p>
+            <select name="rooms" class="input" required>
+               <option value="1">1 room</option>
+               <option value="2">2 rooms</option>
+               <option value="3">3 rooms</option>
+               <option value="4">4 rooms</option>
+               <option value="5">5 rooms</option>
+               <option value="6">6 rooms</option>
+            </select>
+         </div>
+      </div>
+      <!-- <input type="submit" value="Check Availability" name="check" class="btn"> -->
+      <a href="room.html" class="btn">Check Availability</a>  
+   </form>
+
+</section>
+
+<!-- reservation section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="box-container">
+
+      <div class="box">
+         <a href="tel:123456"><i class="fas fa-phone"></i> +123456</a>
+         <a href="tel:123456"><i class="fas fa-phone"></i> +123456</a>
+         <a href="mailto:pulu@gmail.com"><i class="fas fa-envelope"></i> uwu@gmail.com</a>
+         <a href="#"><i class="fas fa-map-marker-alt"></i> Indonesia </a>
+      </div>
+
+      <div class="box">
+         <a href="#home">home</a>
+         <!-- <a href="#about">about</a> -->
+         <a href="#reservation">reservation</a>
+         <!-- <a href="#gallery">gallery</a>
+         <a href="#contact">contact</a>
+         <a href="#reviews">reviews</a> -->
+         <a href="bookings.html">My Booking</a>
+         <a href="log.html">Login</a>
+      </div>
+
+      <div class="box">
+         <a href="#">facebook <i class="fab fa-facebook-f"></i></a>
+         <a href="#">twitter <i class="fab fa-twitter"></i></a>
+         <a href="#">instagram <i class="fab fa-instagram"></i></a>
+         <a href="#">linkedin <i class="fab fa-linkedin"></i></a>
+      </div>
+
+   </div>
+
+   <div class="credit">&copy; copyright @ 2023 uwu | all rights reseved!</div>
+
+</section>
+
+<!-- footer section ends -->
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="/js/script.js"></script>
+
+</body>
+</html>
